@@ -104,6 +104,19 @@ Options:
   it -d -i "New Line" -l 2 file.txt
   ```
 
+
+### Install via APT (Debian/Ubuntu)
+1. Add the repo:
+ ```bash
+   sudo echo "deb [trusted=yes] https://sirajperson.github.io/it/ ./" > /etc/apt/sources.list.d/it.list
+```
+
+2. Update and install:
+ ```bash
+   sudo apt update
+   sudo apt install it
+```
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps:
