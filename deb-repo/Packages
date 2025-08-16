@@ -1,0 +1,18 @@
+Package: it
+Version: 1.0.0-1
+Architecture: amd64
+Maintainer: Siraj Musawwir <your-email@example.com>
+Installed-Size: 891
+Depends: libc6 (>= 2.34)
+Filename: ./pool/main/i/it/it_1.0.0-1_amd64.deb
+Size: 305052
+MD5sum: 0a4ca39d94a81abe3e6375df94648c9f
+SHA1: eb72aa2ba090ca438783e98ce84959a61a20698f
+SHA256: d5bc9a9df525f13ebd24e597721e4d9d1a3976c8898b7eda2a11960be521b430
+Section: utils
+Priority: optional
+Homepage: https://github.com/sirajperson/it
+Description: A command-line tool for inserting, appending, or clearing text in files
+ A Rust CLI tool for text manipulation in files.
+ Supports insert, append, clear, backup, interactive mode, and more.
+
