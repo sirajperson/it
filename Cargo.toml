@@ -2,6 +2,21 @@
 name = "it"
 version = "1.0.0"
 edition = "2021"
+description = "A command-line tool for inserting, appending, or clearing text in files"
+repository = "https://github.com/sirajperson/it"
+license = "MIT"
 
 [dependencies]
-clap = { version = "4.5.45", features = ["derive"] }
+clap = { version = "4.5", features = ["derive"] }
+
+[package.metadata.deb]
+maintainer = "Siraj Musawwir <your-email@example.com>"  # Add your email
+section = "utils"  # Debian section (utils for CLI tools)
+priority = "optional"
+assets = [
+    ["target/release/it", "/usr/bin/it", "755"],  # Install binary to /usr/bin
+    ["README.md", "/usr/share/doc/it/README.md", "644"],  # Optional docs
+]
+depends = "$auto"  # Auto-detect dependencies
+extended-description = """A Rust CLI tool for text manipulation in files.
+Supports insert, append, clear, backup, interactive mode, and more."""

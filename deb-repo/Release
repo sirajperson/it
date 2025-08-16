@@ -1,0 +1,12 @@
+Origin: Siraj Musawwir
+Label: it-repo
+Suite: stable
+Component: main
+Architectures: amd64  # Your arch
+Date: $(date -R)
+MD5Sum:
+ $(md5sum Packages | cut -d' ' -f1) $(stat -c%s Packages) Packages
+ $(md5sum Packages.gz | cut -d' ' -f1) $(stat -c%s Packages.gz) Packages.gz
+SHA256:
+ $(sha256sum Packages | cut -d' ' -f1) $(stat -c%s Packages) Packages
+ $(sha256sum Packages.gz | cut -d' ' -f1) $(stat -c%s Packages.gz) Packages.gz
